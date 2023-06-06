@@ -47,6 +47,20 @@
   z-index: 1;
   border-bottom: 1px solid gainsboro;
 }
+.Navbar h2{
+  margin-left: 120px;
+}
+.Navbar button{
+  width: 100px;
+  height: 30px;
+  margin-right: 110px;
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  color: black;
+
+}
 .hero{
   height: 40vh;
   /* background-color: orange; */
@@ -68,7 +82,7 @@
 .footer{
   /* background-color: orange; */
   background-image: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
-  height: 40vh;
+  height: 10vh;
 }
 
 @media screen and (min-device-width: 360px) and (max-device-width: 798px) {
@@ -86,11 +100,26 @@
    /* border: 1px solid red; */
    height: fit-content;
   }
+  
   .hero input{
     width: 80vw;
     
    
   }
+  .Navbar{
+    height: 7vh;
+  }
+  .Navbar h2{
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .Navbar button{
+    width: 80px;
+    height: 25px;
+    margin-right: 20px;
+  
+  }
+
 }
 
 
