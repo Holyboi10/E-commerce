@@ -1,38 +1,96 @@
 .App {
   text-align: center;
+  /* background-color: brown; */
+  background-color: whitesmoke;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container{
+  /* border: 1px solid red; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 45vh;
+  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+
+  /* margin-bottom: 5px; */
+}
+.Box{
+  /* border: 2px solid #005ac6; */
+  width: 23%;
+  height: 95%;
+  font-size: 13px;
+  box-shadow: 1px 1px 1px 1px #00e474;
+  background-color: white;
+  
+  /* height: fit-content; */
+}
+.images:hover{
+  transform: scale(1.1);
+}
+.p-one{
+  color: #003298;
+  font-weight: bolder;
+}
+.p-two{
+  color:red;
+  font-weight: bold;
+}
+.Navbar{
+  /* border: 1px solid red; */
+  display: flex;
   color: white;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: brown; */
+  background-image: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  border-bottom: 1px solid gainsboro;
+}
+.hero{
+  height: 40vh;
+  /* background-color: orange; */
+  /* border: 1px solid blue; */
+  background-image: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.hero input{
+  width: 40vw;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+  /* background-color: orange; */
+  background-image: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
+  height: 40vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-device-width: 360px) and (max-device-width: 798px) {
+  .Box{
+    height: 95%;
+    padding: 4px;
+   
+    width: 90%;
+    margin: auto;
+    font-size: 12px;
   }
-  to {
-    transform: rotate(360deg);
+  .Container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   /* border: 1px solid red; */
+   height: fit-content;
+  }
+  .hero input{
+    width: 80vw;
+    
+   
   }
 }
+
+
